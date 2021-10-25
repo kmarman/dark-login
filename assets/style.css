@@ -1,0 +1,226 @@
+*{
+    padding:0 ; 
+    margin:0 ;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width:80%;
+    margin:auto;
+    position:relative;
+}
+.main-section{
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(image/bg.jpg) no-repeat center center;
+    background-size:cover;
+    width:100vw;
+    height:100vh;    
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height:5rem;    
+}
+.header > *{
+    flex:1;
+}
+.logo h1{
+    color:#ff7200;
+    font-weight: 700;
+    font-size: 40px;
+    margin-left:8px;
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    transition: ease-in .2s;
+}
+.logo > h1 > small{
+    font-size: 30px;
+    transition: ease-in-out .2s;
+}
+
+.logo h1:hover {
+    margin-left:0;
+}
+.logo h1:hover  small{
+    font-size:40px;
+}
+#menu{
+    list-style: none;
+    display:flex;
+    align-items: center;
+}
+#menu li{
+    padding:0 20px;
+}
+#menu li a{
+    color:#fff;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight: 500;
+    font-size:14px;
+    cursor:pointer;
+    color:#f1f1f1;
+    transition:ease-in-out .2s;
+}
+#menu li a:hover{
+    color:#ff7200;
+}
+/* [type="text"] */
+input{
+    background:transparent;
+    border:none;
+    outline:none;
+    padding:15px;
+    color:#fff;
+    caret-color: #ff7200;
+    border:1px solid #ff7200;
+    border-right:none;
+    border-radius: 5px 0 0 5px;
+}
+[type="email"],
+[type="password"]{
+    padding-left: 0;
+}
+::placeholder{
+    color:#bbb;
+    font-size: 14px;
+    letter-spacing: .1em;
+}
+.search-box{
+    text-align:right;
+}
+.src-btn{
+    background:#ff7200;
+    border:none;
+    outline:none;
+    padding:15px;
+    margin-left:-5px;
+    color:#000;
+    cursor:pointer;
+    border:1px solid #ff7200;
+    border-radius: 0 5px 5px 0;
+    padding-top:-1px;
+    font-weight: bold;
+}
+/* header navbar end =================== */
+/* content section spart ==================== */
+.content{
+    margin-top:12em;
+}
+.content h1{
+    color:#fff;
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: .1rem;
+    padding:5px;
+}
+.content h1 span{
+    color:#ff7200;
+    letter-spacing: .2rem;
+    font-size:60px;
+}
+.content p{
+    color:#fff;
+    font-size:18px;
+    line-height: 1.5rem;
+}
+.join-btn{
+    background-color:#ff7200;
+    border:none;
+    outline:none;
+    font-size:18px;
+    font-weight: 600;
+    padding:10px 40px;
+    margin:30px 0;
+    border-radius: 5px;
+    transition:ease-in-out .25s;
+}
+.join-btn:hover{    
+    color: #FFF;
+}
+
+/* search box end ================= */
+
+
+/* Form section Start ============================ */
+
+.form-section{
+    position:absolute;
+    background:rgba(0,0,0, 0.6);
+    width:320px;
+    height: 500px;
+    top:12em;
+    right:0;
+    text-align: center;
+    padding:30px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 30px rgba(255,255,255, 0.2);
+}
+.form-section h2{
+    background-color:#333;
+    color:#ff7200;
+    font-weight: 600;
+    font-size: 25px;
+    padding:10px 0;
+    margin-top:12px;
+    border-radius:5px;
+    user-select: none;
+    cursor: default;
+}
+[type="email"],[type="password"]{
+    border:none;
+    width:100%;
+    border-bottom: 1px solid #ff7200;
+    border-radius: 0;
+    padding: 15 20px;
+    margin-top:30px;
+}
+.f-btn{
+    background-color:#ff7200;
+    width:100%;
+    margin-top:30px;
+    border:none;
+    outline:none;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    cursor: pointer;
+    padding:10px 0;
+    border-radius: 5px;
+    transition: ease-in-out .25s;
+}
+.f-btn:hover{
+    color: #FFF;
+}
+.signUp{
+    color:#fff;
+    margin:20px 0;
+    line-height: 1.3rem;
+}
+.signUp a{
+    text-decoration: none;
+    color:#ff7200;
+}
+.f-link p{
+    color:#fff;
+    margin-top: 10px;
+}
+#f-menu{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin:15px 0;
+}
+#f-menu li{
+    padding:10px 15px;
+}
+#f-menu li a{
+    color:#f1f1f1;
+    font-size: 25px;
+    transition: ease-in-out .3s;
+}
+#f-menu li:hover a{
+    color:#ff7200;
+}
